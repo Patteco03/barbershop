@@ -1,0 +1,45 @@
+#mostra{
+	display: none;
+}
+.areatroco{
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.areatroco input{
+	width: 40%;
+}
+
+.areatroco button{
+
+}
+
+.listgrpi{
+	border-bottom: 1px solid #ebebeb;
+}
+
+.iconstatus{
+	position: relative;
+	float: right;
+}
+
+.valorvenda{
+	text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.valorsaida{
+	text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.valorsaldo{
+	text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 20px;
+}
