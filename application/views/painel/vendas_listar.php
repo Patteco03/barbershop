@@ -25,6 +25,9 @@
 							<th class="th-sm">Nome
 								<i class="material-icons" aria-hidden="true">import_export</i>
 							</th>
+							<th class="th-sm">Cupom
+								<i class="material-icons" aria-hidden="true">import_export</i>
+							</th>
 							<th class="th-sm">Status
 								<i class="material-icons" aria-hidden="true">import_export</i>
 							</th>
@@ -38,6 +41,7 @@
 						<tr>
 							<td>{ID}</td>
 							<td>{NOME}</td>
+							<td>{CUPOM}</td>
 							<td>{STATUS}</td>
 							<td>
 								<a href="{URLEXCLUIR}" id="delete" title="Excluir" rel="tooltip" class="btn btn-danger btn-link btn-sm">

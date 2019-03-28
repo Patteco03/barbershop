@@ -42,10 +42,17 @@ class Vendas extends CI_Controller
 				}
 				$this->load->model('Cupom_Model', 'CupomM');
 				$cupom = $this->CupomM->get(array("cliente_id" => $r->cliente_id), FAlSE, FAlSE);
-				$quantidade = 0;
-				foreach ($cupom as $cpm) {
-					$quantidade = $cpm->quantidade;
+				$quantidade = null;
+				if ($cupom) {
+					foreach ($cupom as $cpm) {
+						if ($cpm->quantidade == 10) {
+							$quantidade = '<i class="material-icons" style="color:#FF5C00;">star</i>';
+						}
+					}
+				}else{
+					$quantidade = null;
 				}
+				
 
 				$data['BLC_DADOS'][] = array(
 					"ID" => $r->id,
